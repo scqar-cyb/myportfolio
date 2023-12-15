@@ -185,9 +185,7 @@ footer {
     background-color: rgba(255, 255, 255, 1);
     padding: 20px;
     text-align: center;
-
-
-
+    padding-right:;
 }
 
 iframe{
@@ -978,7 +976,7 @@ width:100%;
 }
 
 .coordonee{
-  width:80%;
+  width:79vw;
 
 }
 
