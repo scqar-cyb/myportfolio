@@ -544,11 +544,14 @@ padding-right: 2vw;
 }
 
 .named:hover .technique{
-height:37%;
+height:17vw;
 }
 
 .technique:hover{
-  overflow:scroll;
+  overflow:clip;
+  scrollbar-width: none;
+
+
 }
 
 .technique:not(:hover) .named{
@@ -560,7 +563,7 @@ height:37%;
   animation: clignoter 1s ease-in-out infinite;
 }
 .named:hover #ectech{
-height:55vw;
+height:28vw;
 }
 
 .technique b{
@@ -608,7 +611,7 @@ line-height: 0.7vw;
 -webkit-transition: height 1s ease-in-out;
 -moz-transition: height 1s ease-in-out;
 transition: height 1s ease-in-out;
-height:3.8%;
+height:3vw;
 overflow:hidden;
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
