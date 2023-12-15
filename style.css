@@ -6,13 +6,16 @@ body {
     background-color: #000;
     color: #fffffff;
     overflow-x: clip;
+    scrollbar-width:  auto;
+    scrollbar-color:rgba(50, 240, 250, 0.7);
+    scrollbar-gutter: stable both-edges;
 }
 
 header {
     background-color: #fff;
     color: #000000;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding-top: 10%;
     padding-bottom: 13vw;
     color: #000000;
@@ -253,6 +256,8 @@ transition: opacity 0.5s ease-in-out;
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
   white-space:line;
+  border-top-right-radius: 15px;
+  border-top-left-radius:15px;
 }
 
 .column h2{
@@ -269,7 +274,7 @@ min-height:100%;
 margin-top:0.5%;
 max-widht:100%;
 min-width:100%;
-border-radius:0px;
+border-radius:15px;
 border: 1px solid #000000;
 background-color: rgba(255, 255, 255, 1);
 text-align:center;
@@ -480,7 +485,9 @@ opacity: 1;
 -webkit-transition:opacity 0s ease-in-out;
 -moz-transition:opacity 0s ease-in-out;
 transition: opacity 0s ease-in-out;
-border-radius:0px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
 width:min-content;
 height:min-content;
 position: fixed;
@@ -528,6 +535,11 @@ z-index: 1;
   transition: height 1s ease-in-out;
   height:3.8%;
   overflow:hidden;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  scrollbar-width: thin;
+  scrollbar-color:rgba(50, 240, 250, 0.7);
+  scrollbar-gutter: stable both-edges;
 }
 
 .named:hover .technique{
@@ -601,11 +613,12 @@ margin-top:0vw;
 margin-bottom: 0vw;
 height: 100%;
 width:100%;
+
 }
 
 .visual img{
   object-fit:cover;
-  border-radius:0px;
+  border-radius:15px;
   max-width: auto;
   max-height: 55%;
   min-height: auto;
@@ -1076,9 +1089,7 @@ right: 0%;
 
 }
 .a_propos{
-  text-align: left;
-  font-size: 0.85vw;
-  white-space:pre-line;
+
   padding: 1vw;
   display: grid;
   grid-template-columns: 40% 60% ;
@@ -1091,6 +1102,7 @@ right: 0%;
   white-space:pre-line;
   padding: 0.1vw;
   display: grid;
+  line-height: 1.15;
 }
 
 .a_propos img{
@@ -1098,7 +1110,7 @@ right: 0%;
 }
 
 #about {
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   text-align: center;
 }
 
