@@ -1127,6 +1127,9 @@ right: 0%;
   margin-top:13%;
   width: 70%;
   right: 1vw;
+  overflow: hidden;
+  font-size: 0.9vw;
+  text-align: center;
 
 }
 .a_propos{
@@ -1135,6 +1138,8 @@ right: 0%;
   display: grid;
   grid-template-columns: 40% 60% ;
   margin-right: 3vw;
+
+
 }
 
 .a_propos b{
@@ -1143,6 +1148,7 @@ right: 0%;
   padding: 0.1vw;
   display: grid;
   line-height: 1.15;
+
 }
 
 .a_propos img{
@@ -1150,10 +1156,24 @@ right: 0%;
 }
 
 #about {
-  font-size: 0.9vw;
-  text-align: center;
+
+}
+#en{
+
 }
 
+.mystory:hover {
+  font-size: none;
+  height: 71vw;
+}
+.mystory{
+  display: inline;
+  overflow: hidden;
+  height: 40vw;
+  -webkit-transition:height 0.5s ease-in-out;
+  -moz-transition:height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
 
 @keyframes travel {
    0%, 100% {
