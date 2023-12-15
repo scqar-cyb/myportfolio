@@ -536,7 +536,7 @@ padding-right: 2vw;
   -webkit-transition: height 1s ease-in-out;
   -moz-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
-  height:3.8%;
+  height:2vw;
   overflow:hidden;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -562,7 +562,7 @@ height:37%;
   animation: clignoter 1s ease-in-out infinite;
 }
 .named:hover #ectech{
-height:55%;
+height:55vw;
 }
 
 .technique b{
