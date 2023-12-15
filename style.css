@@ -473,7 +473,8 @@ padding-top: 2vw;
 #sujet{
 background-color: rgba(255, 255, 255, 1);
 max-widht:100%;
-min-widht:100%;  mix-blend-mode: lighten;
+min-widht:100%;
+mix-blend-mode: lighten;
 min-height:100%;
 border-radius:0px;
 }
@@ -495,6 +496,7 @@ border: 1px solid #000000;
 right:1vw;
 z-index: 1;
 padding-right: 2vw;
+
 
 
 }
@@ -538,7 +540,7 @@ padding-right: 2vw;
   overflow:hidden;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color:rgba(50, 240, 250, 0.7);
   scrollbar-gutter: stable both-edges;
 }
@@ -554,6 +556,13 @@ height:37%;
 .technique:not(:hover) .named{
 
   animation: clignoter 1s ease-in-out infinite;
+}
+#ectech:not(:hover) .named{
+
+  animation: clignoter 1s ease-in-out infinite;
+}
+.named:hover #ectech{
+height:55%;
 }
 
 .technique b{
@@ -577,7 +586,38 @@ height:37%;
   transition: opacity 0.3s ease-in-out;
 }
 
-
+#ectech{
+background-color: rgba(0, 240, 200, 0.7);
+opacity: 1;
+-webkit-transition:opacity 2s ease-in-out;
+-moz-transition:opacity 2s ease-in-out;
+transition: opacity 2s ease-in-out;
+border-radius:0px;
+display:block;
+position: fixed;
+border: 1px solid #000000;
+right:1vw;
+padding-left:1vw;
+padding-top:0.3vw;
+padding-bottom:1vw;
+padding-right:8vw;
+text-align:right;
+font-size:0.8vw;
+align-content: left;
+z-index: 1;
+width: 0.2%;
+line-height: 0.7vw;
+-webkit-transition: height 1s ease-in-out;
+-moz-transition: height 1s ease-in-out;
+transition: height 1s ease-in-out;
+height:3.8%;
+overflow:hidden;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+scrollbar-width: none;
+scrollbar-color:rgba(50, 240, 250, 0.7);
+scrollbar-gutter: stable both-edges;
+}
 .explain{
  display:grid;
  height:100%;
