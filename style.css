@@ -961,15 +961,6 @@ width:100%;
   aspect-ratio:3/4;
 }
 
-.AV-IMG #sym{
-  aspect-ratio:3/3.3;
-  -webkit-transition:aspect-ratio 0.5s ease-in-out;
-  -moz-transition:aspect-ratio 0.5s ease-in-out;
-  transition: aspect-ratio 0.5s ease-in-out;
-}
-.AV-IMG:hover #sym{
-  aspect-ratio:3/4;
-}
 .img img{
 
   object-fit: cover;
