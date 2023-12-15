@@ -842,7 +842,7 @@ width:100%;
   font-size:1vw;
   border: 1px solid #000000;
   border-radius:0px;
-  display:flex;
+  display:  flow;
 }
 
 .project {
@@ -959,6 +959,11 @@ width:100%;
 }
 .AV-IMG:hover #forms{
   aspect-ratio:3/4;
+}
+
+.case{
+
+  padding-right:2%;
 }
 
 .img img{
