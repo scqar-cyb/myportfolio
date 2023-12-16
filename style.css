@@ -544,11 +544,11 @@ padding-right: 2vw;
 }
 
 .named:hover .technique{
-height:17vw;
+height:19vw;
 }
 
 .technique:hover{
-  overflow:clip;
+  overflow:hidden;
   scrollbar-width: none;
 
 
@@ -611,7 +611,7 @@ line-height: 0.7vw;
 -webkit-transition: height 1s ease-in-out;
 -moz-transition: height 1s ease-in-out;
 transition: height 1s ease-in-out;
-height:3vw;
+height:2vw;
 overflow:hidden;
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
