@@ -1,3 +1,8 @@
+html{
+  scrollbar-width: thin;
+  
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 60%;
@@ -6,9 +11,9 @@ body {
     background-color: #000;
     color: #fffffff;
     overflow-x: clip;
-    scrollbar-width:  auto;
-    scrollbar-color:rgba(50, 240, 250, 0.7);
-    scrollbar-gutter: stable both-edges;
+    scrollbar-width: thin;
+    scrollbar-color:rgba(50, 240, 250, 0.1);
+
 }
 
 header {
@@ -454,10 +459,16 @@ padding-top: 2vw;
 .rectif{
   position:relative;
   aspect-ratio:1/1;
+  transform: scale(100%);
+  -webkit-transition:transform 1s ease-in-out;
+  -moz-transition:transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ;
+
 }
 
 .rectif:hover{
-  transition: transform 0.5s ;
+  transition: transform 1s ;
   transform: scale(120%);
   z-index: 8;
   position: relative;
@@ -494,6 +505,7 @@ border: 1px solid #000000;
 right:1vw;
 z-index: 1;
 padding-right: 2vw;
+
 
 
 
@@ -538,9 +550,9 @@ padding-right: 2vw;
   overflow:hidden;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  scrollbar-width: none;
-  scrollbar-color:rgba(50, 240, 250, 0.7);
-  scrollbar-gutter: stable both-edges;
+
+
+
 }
 
 .named:hover .technique{
@@ -549,7 +561,7 @@ height:19vw;
 
 .technique:hover{
   overflow:hidden;
-  scrollbar-width: none;
+
 
 
 }
@@ -611,7 +623,7 @@ line-height: 0.7vw;
 -webkit-transition: height 1s ease-in-out;
 -moz-transition: height 1s ease-in-out;
 transition: height 1s ease-in-out;
-height:2vw;
+height:3vw;
 overflow:hidden;
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
@@ -820,7 +832,17 @@ width:100%;
   position: initial;
   max-width:50%;
   opacity:1;
+  height:23vw;
+  -webkit-transition:height 1s ease-in-out;
+  -moz-transition:height 1s ease-in-out;
+  transition: height 1s ease-in-out;
 }
+
+.accueil:hover{
+  height: 43vw;
+}
+
+
 
 #title{
   margin-right: 0%;
@@ -1165,7 +1187,7 @@ right: 0%;
 
 .mystory:hover {
   font-size: none;
-  height: 76vw;
+  height: 78vw;
 }
 .mystory{
   display: inline;
