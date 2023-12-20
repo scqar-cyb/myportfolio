@@ -19,8 +19,8 @@ body {
 header {
     background-color: #fff;
     color: #000000;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding-top: 10%;
     padding-bottom: 13vw;
     color: #000000;
@@ -179,7 +179,7 @@ section {
     color:#000000;
     padding: 20px;
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 0px;
     margin: 2px ;
     position: relative;
 }
@@ -259,8 +259,8 @@ transition: opacity 0.5s ease-in-out;
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
   white-space:line;
-  border-top-right-radius: 15px;
-  border-top-left-radius:15px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .column h2{
@@ -277,7 +277,7 @@ min-height:100%;
 margin-top:0.5%;
 max-widht:100%;
 min-width:100%;
-border-radius:15px;
+border-radius:0px;
 border: 1px solid #000000;
 background-color: rgba(255, 255, 255, 1);
 text-align:center;
@@ -495,9 +495,9 @@ opacity: 1;
 -webkit-transition:opacity 0s ease-in-out;
 -moz-transition:opacity 0s ease-in-out;
 transition: opacity 0s ease-in-out;
-border-top-right-radius: 15px;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
 width:min-content;
 height:min-content;
 position: fixed;
@@ -548,8 +548,8 @@ padding-right: 2vw;
   transition: height 1s ease-in-out;
   height:2vw;
   overflow:hidden;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 
 
 
@@ -625,8 +625,8 @@ line-height: 0.7vw;
 transition: height 1s ease-in-out;
 height:3vw;
 overflow:hidden;
-border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
 scrollbar-width: none;
 scrollbar-color:rgba(50, 240, 250, 0.7);
 scrollbar-gutter: stable both-edges;
@@ -672,7 +672,7 @@ width:100%;
 
 .visual img{
   object-fit:cover;
-  border-radius:15px;
+  border-radius:0px;
   max-width: auto;
   max-height: 55%;
   min-height: auto;
@@ -683,7 +683,7 @@ width:100%;
 
 .visual video{
   object-fit: cover;
-  border-radius:15px;
+  border-radius:0px;
   max-width: 100%;
   max-height: 45%;
   min-height: 55%;
@@ -692,7 +692,7 @@ width:100%;
 }
 
 .visual iframe{
-  border-radius:15px;
+  border-radius:0px;
   width:40%;
   height: 50%;
   z-index: 1;
