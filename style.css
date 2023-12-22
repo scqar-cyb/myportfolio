@@ -44,7 +44,7 @@ nav ul {
   background-color: #fff;
   border: 1px solid #333;
   Border-radius: 0px;
-  font-size:300%;
+  font-size:1.5vw;
   display:inline-grid;
 }
 
@@ -875,8 +875,7 @@ width:100%;
   text-align:center;
   font-size:1500%;
   margin-top:1"three three four four"
-                        "three three four four"
-0%;
+                        "three three four four";
   text-shadow: 10px;
   text-decoration: line-through;
   overflow-x: clip;
@@ -1024,7 +1023,7 @@ width:100%;
   color: #fff;
   text-align: center;
   padding-bottom: 2%;
-  left:93%;
+  left:70vw;
   width:30%;
   margin-top: 4%;
   margin-bottom: -0.1%;
@@ -1033,7 +1032,7 @@ width:100%;
 }
 
 .coordonee{
-  width:75vw;
+  width:65vw;
 
 }
 
