@@ -234,7 +234,8 @@ opacity: 1;
 transition: opacity 0.5s ease-in-out;
 }
 #rows{
-    overflow:scroll;
+    overflow-y:scroll;
+    white-space: line;
 }
 
 .rows:not(:hover){
@@ -873,7 +874,9 @@ width:100%;
   padding:0%;
   text-align:center;
   font-size:1500%;
-  margin-top:10%;
+  margin-top:1"three three four four"
+                        "three three four four"
+0%;
   text-shadow: 10px;
   text-decoration: line-through;
   overflow-x: clip;
@@ -910,7 +913,7 @@ width:100%;
 }
 
 .Works {
-  margin-right: 0;
+  margin-right: 0.5vw;
   margin-left: 10.5%;
   margin-top:-120px;
   margin-bottom:0.10vw;
@@ -922,23 +925,31 @@ width:100%;
   padding-bottom: 0.3vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(49%, 1fr)); /* Crée des colonnes de largeur minimale de 250px */
-  gap:1%;/* Espace entre les éléments de la grille */
+  gap:1vw;/* Espace entre les éléments de la grille */
   height: min-content;
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width:400px) {
+  .Works {
+    gap:1.8vw;
+  }
+}
+
 .projet_ex{
   padding-top:1%;
-  padding:0.1%;
+  padding:0.01%;
+  margin:0.1%
+
   max-width: min-content;
   min-width: 44vw;
   max-height: min-content;
   min-height:5vw;
   font-size:1vw;
   border: 1px solid #000000;
-  border-radius:0px;
-  display:  flow;
+
+  display:flow;
 }
 
 .project {
@@ -950,6 +961,7 @@ width:100%;
     align-content: center;
     justify-content: center;
     overflow: hidden;
+
 }
 
 .project:hover {
@@ -983,6 +995,7 @@ width:100%;
    /* Crée des colonnes de largeur minimale de 250px */
   gap: 1%; /* Espace entre les éléments de la grille */
   content-align: center;
+
 }
 
 .name{
@@ -1101,7 +1114,7 @@ aspect-ratio: 16/ 9;
   background-color: #fff;
   position: relative;
   height: min-content;
-  width: min-content;
+
 }
 
 
@@ -1117,7 +1130,7 @@ aspect-ratio: 16/ 9;
   background-color: #fff;
   position:initial;
   height: min-content;
-  width: min-content;
+
 }
 
 #METAMORPHOSE{
