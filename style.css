@@ -44,8 +44,18 @@ nav ul {
   background-color: #fff;
   border: 1px solid #333;
   Border-radius: 0px;
-  font-size:1.5vw;
+
   display:inline-grid;
+}
+@media (max-width:860px) {
+  nav ul {
+    font-size:4vw;
+  }
+}
+@media (min-width:860px) {
+  nav ul {
+    font-size:30px;
+  }
 }
 
 nav ul li {
@@ -660,6 +670,7 @@ scrollbar-gutter:  stable;
 
 
   }
+
 }
 
 .passage{
