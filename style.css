@@ -683,6 +683,7 @@ scrollbar-gutter:  stable;
 .content{
   position:relative;
   width: 100%;
+
 }
 
 .visual{
@@ -998,14 +999,11 @@ width:100%;
   padding-bottom: 1%;
   height: 100%;
   display:  grid;
-  grid-template-areas:  "one one two two"
-                        "one one two two"
-                        "three three four four"
-                        "three three four four";
+  grid-template-areas:  "one one two two three three"
+                        "one one two two three three";
    /* Crée des colonnes de largeur minimale de 250px */
   gap: 1%; /* Espace entre les éléments de la grille */
   content-align: center;
-
 }
 
 .name{
@@ -1053,9 +1051,9 @@ width:100%;
   max-width: 100%;
   max-height: 100%;
   min-height: 10vw;
-  min-widht:10vw;
+  min-width:10.4vw;
   background-color:#000000;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1 ;
   -webkit-transition:aspect-ratio 0.5s ease-in-out;
   -moz-transition:aspect-ratio 0.5s ease-in-out;
   transition: aspect-ratio 0.5s ease-in-out;
@@ -1065,7 +1063,7 @@ width:100%;
 .img:hover{
   aspect-ratio:3/4;
   z-index: 3;
-  max-height:100%;
+
 
 
 }
@@ -1075,9 +1073,10 @@ width:100%;
   -webkit-transition:aspect-ratio 0.5s ease-in-out;
   -moz-transition:aspect-ratio 0.5s ease-in-out;
   transition: aspect-ratio 0.5s ease-in-out;
+
 }
 .AV-IMG:hover #forms{
-  aspect-ratio:3/4;
+  aspect-ratio:3/5;
 }
 
 .case{
@@ -1091,7 +1090,9 @@ width:100%;
   background-color:#000000;
 }
 
+.img-s-v1{
 
+}
 
 .yt {
 aspect-ratio: 1 / 1;
