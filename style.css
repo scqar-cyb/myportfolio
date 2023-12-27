@@ -1028,21 +1028,18 @@ scrollbar-gutter:  stable;
 }
 
 .Works {
-  margin-right: 0.5vw;
   margin-left: 10.5%;
-  margin-top:-120px;
-  margin-bottom:0.10vw;
-  border-radius: 0px;
+  margin-top:-130px;
   padding:0.0%;
   padding-top: 0.0%;
   padding-right: 0vw;
-  padding-bottom: 0.3vw;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(49%, 1fr)); /* Crée des colonnes de largeur minimale de 250px */
   gap:1vw;/* Espace entre les éléments de la grille */
   height: min-content;
-  border: 1px solid #000000;
-  background-color: rgba(255, 255, 255, 0.3);
+  border: 0px solid white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 @media (max-width:500px) {
@@ -1052,13 +1049,7 @@ scrollbar-gutter:  stable;
 }
 
 .projet_ex{
-  padding-top:1%;
-  padding:0.01%;
-  margin:0.1%
-  max-width: min-content;
-  min-width: 44vw;
   max-height: min-content;
-  min-height:5vw;
   font-size:1vw;
   border: 1px solid #000000;
   display:flow;
@@ -1090,20 +1081,18 @@ scrollbar-gutter:  stable;
 
 .projet_exp{
   border: 1px solid #000;
-  margin: 0.10%;
   background-color: #000000;
   border-radius: 0px;
   padding-top: 1%;
-  padding-right: 0.5%;
-  padding-left: 1%;
+
   padding-bottom: 1%;
   height: 100%;
   display:  grid;
   grid-template-areas:  "one one two two three three"
                         "one one two two three three";
    /* Crée des colonnes de largeur minimale de 250px */
-  gap: 1%; /* Espace entre les éléments de la grille */
-  content-align: center;
+  gap: 0%; /* Espace entre les éléments de la grille */
+
 }
 
 .name{
@@ -1161,7 +1150,7 @@ scrollbar-gutter:  stable;
 }
 
 .AV-IMG #forms{
-  aspect-ratio:3/3.9;
+  aspect-ratio:3/4.17;
   -webkit-transition:aspect-ratio 0.5s ease-in-out;
   -moz-transition:aspect-ratio 0.5s ease-in-out;
   transition: aspect-ratio 0.5s ease-in-out;
