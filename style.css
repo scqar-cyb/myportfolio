@@ -246,6 +246,14 @@ transition: opacity 0.5s ease-in-out;
 #rows{
     overflow-y:scroll;
     white-space: line;
+    max-width:100%;
+    min-width:98%;
+}
+#outi{
+
+    white-space: line;
+    max-width:100%;
+    min-width:98%;
 }
 
 .rows:not(:hover){
@@ -253,11 +261,11 @@ transition: opacity 0.5s ease-in-out;
 
 .home{
   position:relative;
-  margin-left: -0.5%;
-  padding: 0.2%;
+  margin-left: -2%;
+  padding: 0%;
   height:130%;
   max-height: 100%;
-  max-widht:100%;
+
   min-width:100%;
   border: 1px solid #000000;
   font-size:1vw;
@@ -266,15 +274,17 @@ transition: opacity 0.5s ease-in-out;
 .column{
   position:relative;
   opacity: 1;
+  margin-top:auto;
   height:130%;
   max-height: 100%;
-  max-widht:100%;
-  min-width:100%;
+  max-width:100%;
+  min-width:101%;
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
   white-space:line;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
+
 }
 
 .column h2{
@@ -288,7 +298,8 @@ white-space:line;
 
 .columns{
 min-height:100%;
-margin-top:0.5%;
+margin-left: 0%;
+
 max-widht:100%;
 min-width:100%;
 border-radius:0px;
@@ -301,6 +312,7 @@ opacity: 1;
 -moz-transition:opacity 0.5s ease-in-out;
 transition: opacity 0.5s ease-in-out;
 padding-top: 2vw;
+
 }
 
 .columns:not(:hover){
@@ -472,6 +484,12 @@ padding-top: 2vw;
   }
 }
 
+@media (max-width:500px) {
+  .explain{
+      min-width: 26.7%;
+  }
+}
+
 
 
 
@@ -507,7 +525,60 @@ min-height:100%;
 border-radius:0px;
 }
 
+@media (max-width:1100px) {
 
+  .named h6{
+    padding-right:6vw;
+    padding-left:1vw;
+    font-size: 3vw;
+
+
+  }
+
+  .technique{
+    font-size: 2vw;
+    padding-left:1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    padding-right:20vw;
+    line-height: 1.7vw;
+    height:5vw;
+  }
+  .named:hover #ectech{
+  height:29vw;
+  }
+  .named:hover .technique{
+  height:45vw;
+  }
+}
+
+@media (min-width:1100px) {
+
+  .named h6{
+    padding-right:5vw;
+    padding-left:1vw;
+    font-size: 1.2vw;
+
+  }
+
+  .technique{
+    font-size: 0.7vw;
+    padding-left:0.44vw;
+    padding-top:0.5vw;
+    padding-bottom:1vw;
+    padding-right:7vw;
+    line-height: 0.7vw;
+    height:2vw;
+  }
+  .named:hover #ectech{
+  height:29vw;
+  }
+  .named:hover .technique{
+  height:19vw;
+  }
+
+
+}
 .named{
 background-color: rgba(255, 255, 255, 1);
 opacity: 1;
@@ -524,10 +595,6 @@ border: 1px solid #000000;
 right:1vw;
 z-index: 1;
 padding-right: 2vw;
-
-
-
-
 }
 
 @keyframes clignoter {
@@ -552,20 +619,17 @@ padding-right: 2vw;
   position: fixed;
   border: 1px solid #000000;
   right:1vw;
-  padding-left:1vw;
-  padding-top:0.3vw;
-  padding-bottom:1vw;
-  padding-right:8vw;
+
   text-align:right;
-  font-size:0.8vw;
+
   align-content: left;
   z-index: 1;
   width: 0.2%;
-  line-height: 0.7vw;
+
   -webkit-transition: height 1s ease-in-out;
   -moz-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
-  height:2vw;
+
   overflow:hidden;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -574,28 +638,20 @@ padding-right: 2vw;
 
 }
 
-.named:hover .technique{
-height:19vw;
-}
 
 .technique:hover{
   overflow:hidden;
-
-
-
 }
 
 .technique:not(:hover) .named{
-
   animation: clignoter 1s ease-in-out infinite;
 }
+
 #ectech:not(:hover) .named{
-
   animation: clignoter 1s ease-in-out infinite;
 }
-.named:hover #ectech{
-height:28vw;
-}
+
+
 
 .technique b{
   text-align: center;
@@ -650,15 +706,15 @@ scrollbar-width: none;
 scrollbar-color:rgba(50, 240, 250, 0.7);
 scrollbar-gutter:  stable;
 }
+
 .explain{
  display:grid;
  height: 100%;
  z-index:2;
  grid-template-rows:5% 12% 65% 14%; /* Crée des colonnes de largeur minimale de 250px */
- gap:0.1vw;
+ gap:0.0vw;
  position:relative;
  width: 21%;
-
 }
 
 @media (max-height:860px) {
@@ -667,39 +723,41 @@ scrollbar-gutter:  stable;
    scrollbar-width:0px;
    scrollbar-gutter:  stable both-edges;
    height: 115%;
-
-
   }
+}
 
+@media (min-width:550px) {
+  .explain{
+  min-width: 24%
+  }
 }
 
 .passage{
   display:grid;
   grid-template-columns:40% 60%;
   height: 150%;
+  margin-left:-1%;
 }
 
 
 .content{
   position:relative;
-  width: 100%;
-
+  width:100%;
 }
 
 .visual{
-padding-top:1%;
-overflow:  auto;
-display:  inline-flow;
-grid-template-columns: 33% 33% 33%;
-content-position: center;
-gap: 0.1vw;
-margin-right:2vw;
-padding-left:8%;
-margin-top:0vw;
-margin-bottom: 0vw;
-height: 100%;
-width:100%;
-
+  padding-top:1%;
+  overflow:  auto;
+  display:  inline-flow;
+  grid-template-columns: 33% 33% 33%;
+  content-position: center;
+  gap: 0.1vw;
+  margin-right:2vw;
+  padding-left:8%;
+  margin-top:0vw;
+  margin-bottom: 0vw;
+  height: 100%;
+  width:100%;
 }
 
 .visual img{
@@ -725,14 +783,23 @@ width:100%;
 
 .visual iframe{
   border-radius:0px;
-  width:40%;
+  width: 50%;
   height: 50%;
   z-index: 1;
   padding-bottom:5vw;
   fit-content:1/1;
 }
 
-
+@media (max-width:1350px) {
+  .visual iframe{
+    border-radius:0px;
+    width: 95%;
+    height: 50%;
+    z-index: 1;
+    padding-bottom:5vw;
+    fit-content:1/1;
+  }
+}
 
 .graphisme{
   grid-template-rows:10% 90% ;
@@ -754,7 +821,6 @@ width:100%;
   width:100%;
   height: auto;
   background:#000000;
-
 }
 
 
@@ -770,8 +836,6 @@ width:100%;
   top:5%;
   left:5%;
 }
-
-
 
 .content:hover .texte_travaux{
   opacity:1;
@@ -842,11 +906,7 @@ width:100%;
   transition: color 1s ease-in-out;
   color:black;
   white-space:line;
-
 }
-
-
-
 
 .a_propos{
   text-align:center;
@@ -901,12 +961,10 @@ width:100%;
   margin-left: 2%;
 }
 
-
 .Monade{
   padding-top:-10%;
   font-size:300%;
   text-align: left;
-
 }
 
 .en-tete{
@@ -928,7 +986,6 @@ width:100%;
   margin-left: 10.5%;
   margin-top:-120px;
   margin-bottom:0.10vw;
-
   border-radius: 0px;
   padding:0.0%;
   padding-top: 0.0%;
@@ -942,7 +999,7 @@ width:100%;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
   .Works {
     gap:1.8vw;
   }
@@ -952,14 +1009,12 @@ width:100%;
   padding-top:1%;
   padding:0.01%;
   margin:0.1%
-
   max-width: min-content;
   min-width: 44vw;
   max-height: min-content;
   min-height:5vw;
   font-size:1vw;
   border: 1px solid #000000;
-
   display:flow;
 }
 
@@ -972,7 +1027,6 @@ width:100%;
     align-content: center;
     justify-content: center;
     overflow: hidden;
-
 }
 
 .project:hover {
@@ -1020,8 +1074,6 @@ width:100%;
 .part h2{
 }
 
-
-
 .about{
   text-align: right;
   color: #000000;
@@ -1037,12 +1089,10 @@ width:100%;
   margin-top: 4%;
   margin-bottom: -0.1%;
   font-size: 1vw;
-
 }
 
 .coordonee{
   width:65vw;
-
 }
 
 .img{
@@ -1057,15 +1107,11 @@ width:100%;
   -webkit-transition:aspect-ratio 0.5s ease-in-out;
   -moz-transition:aspect-ratio 0.5s ease-in-out;
   transition: aspect-ratio 0.5s ease-in-out;
-
 }
 
 .img:hover{
   aspect-ratio:3/4;
   z-index: 3;
-
-
-
 }
 
 .AV-IMG #forms{
@@ -1073,25 +1119,27 @@ width:100%;
   -webkit-transition:aspect-ratio 0.5s ease-in-out;
   -moz-transition:aspect-ratio 0.5s ease-in-out;
   transition: aspect-ratio 0.5s ease-in-out;
-
 }
 .AV-IMG:hover #forms{
   aspect-ratio:3/5;
 }
 
 .case{
-
   padding-right:2%;
 }
 
 .img img{
+  object-fit: cover;
+  background-color:#000000;
+}
 
+.img .video1{
+  aspect-ratio:3/4;
   object-fit: cover;
   background-color:#000000;
 }
 
 .img-s-v1{
-
 }
 
 .yt {
@@ -1110,10 +1158,8 @@ aspect-ratio: 16/ 9;
 #outil{
   color:#000000;
   background-color: #fff;
-
   position: relative;
   height: min-content;
-
 }
 
 #planterium{
@@ -1125,7 +1171,6 @@ aspect-ratio: 16/ 9;
   background-color: #fff;
   position: relative;
   height: min-content;
-
 }
 
 
@@ -1141,27 +1186,21 @@ aspect-ratio: 16/ 9;
   background-color: #fff;
   position:initial;
   height: min-content;
-
 }
 
 #METAMORPHOSE{
   overflow: clip;
-
 }
 
 #nav{
   position: fixed;
   z-index: 1000;
-
   left:1;
   top:-1.5%;
   opacity:0.3;
-
-
   -webkit-transition:opacity 0.5s ease-in-out;
   -moz-transition:opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-
 }
 
 #nav:hover{
@@ -1173,11 +1212,9 @@ aspect-ratio: 16/ 9;
   -webkit-transition:left 0.5s ease-in-out;
   -moz-transition:left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
-
   left:0%;
-
-
 }
+
 #IRT:hover{
 left:-11%;
 right: 0%;
@@ -1196,16 +1233,14 @@ right: 0%;
   overflow: hidden;
   font-size: 0.9vw;
   text-align: center;
-
 }
+
 .a_propos{
 
   padding: 1vw;
   display: grid;
   grid-template-columns: 40% 60% ;
   margin-right: 3vw;
-
-
 }
 
 .a_propos b{
@@ -1214,7 +1249,6 @@ right: 0%;
   padding: 0.1vw;
   display: grid;
   line-height: 1.15;
-
 }
 
 .a_propos img{
@@ -1222,16 +1256,16 @@ right: 0%;
 }
 
 #about {
-
 }
-#en{
 
+#en{
 }
 
 .mystory:hover {
   font-size: none;
   height: 78vw;
 }
+
 .mystory{
   display: inline;
   overflow: hidden;
@@ -1255,12 +1289,9 @@ right: 0%;
       75% {
         transform: translate3d(-300%,0,0);
       }
-
-
       93.75%{
         transform: translate3d(-380%,0,0);
       }
-
       100% {
         transform: translate3d(0%,0,0);
       }
