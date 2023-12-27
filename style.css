@@ -543,22 +543,32 @@ border-radius:0px;
     padding-right:20vw;
     line-height: 1.7vw;
     height:5vw;
+
+
   }
   .named:hover #ectech{
-  height:29vw;
+  height:72vw;
   }
   .named:hover .technique{
   height:45vw;
   }
+  #ectech{
+    font-size: 2vw;
+    padding-left:1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    padding-right:20vw;
+
+
+  }
 }
 
-@media (min-width:1100px) {
+@media (min-width:1000px) {
 
   .named h6{
     padding-right:5vw;
     padding-left:1vw;
     font-size: 1.2vw;
-
   }
 
   .technique{
@@ -572,9 +582,21 @@ border-radius:0px;
   }
   .named:hover #ectech{
   height:29vw;
+
   }
   .named:hover .technique{
   height:19vw;
+  }
+  #ectech{
+    font-size: 0.7vw;
+    padding-left:0.44vw;
+    padding-top:0.5vw;
+    padding-bottom:1vw;
+    padding-right:7vw;
+    line-height: 0.7vw;
+    height:2vw;
+
+
   }
 
 
@@ -582,9 +604,9 @@ border-radius:0px;
 .named{
 background-color: rgba(255, 255, 255, 1);
 opacity: 1;
--webkit-transition:opacity 0s ease-in-out;
--moz-transition:opacity 0s ease-in-out;
-transition: opacity 0s ease-in-out;
+-webkit-transition:all 1s ease-in-out;
+-moz-transition:all 1s ease-in-out;
+transition:all 1s ease-in-out;
 border-top-right-radius: 0px;
 border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
@@ -595,6 +617,7 @@ border: 1px solid #000000;
 right:1vw;
 z-index: 1;
 padding-right: 2vw;
+
 }
 
 @keyframes clignoter {
@@ -606,6 +629,9 @@ padding-right: 2vw;
 .named h6{
   padding-right:6vw;
   padding-left:1vw;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 
 }
 .technique{
@@ -625,15 +651,12 @@ padding-right: 2vw;
   align-content: left;
   z-index: 1;
   width: 0.2%;
-
-  -webkit-transition: height 1s ease-in-out;
-  -moz-transition: height 1s ease-in-out;
-  transition: height 1s ease-in-out;
-
   overflow:hidden;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 
 
 }
@@ -685,26 +708,24 @@ display:block;
 position: fixed;
 border: 1px solid #000000;
 right:1vw;
-padding-left:1vw;
-padding-top:0.3vw;
-padding-bottom:1vw;
-padding-right:8vw;
+
 text-align:right;
-font-size:0.8vw;
+
 align-content: left;
 z-index: 1;
 width: 0.2%;
-line-height: 0.7vw;
--webkit-transition: height 1s ease-in-out;
--moz-transition: height 1s ease-in-out;
-transition: height 1s ease-in-out;
-height:3vw;
+
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+
+
+
 overflow:hidden;
-border-bottom-right-radius: 0px;
-border-bottom-left-radius: 0px;
 scrollbar-width: none;
 scrollbar-color:rgba(50, 240, 250, 0.7);
 scrollbar-gutter:  stable;
+
 }
 
 .explain{
@@ -714,7 +735,10 @@ scrollbar-gutter:  stable;
  grid-template-rows:5% 12% 65% 14%; /* Crée des colonnes de largeur minimale de 250px */
  gap:0.0vw;
  position:relative;
- width: 21%;
+ max-width: 27%;
+ -webkit-transition:all 1s ease-in-out;
+ -moz-transition:all 1s ease-in-out;
+ transition:all 1s ease-in-out;
 }
 
 @media (max-height:860px) {
@@ -726,9 +750,9 @@ scrollbar-gutter:  stable;
   }
 }
 
-@media (min-width:550px) {
+@media (min-width:860px) {
   .explain{
-  min-width: 24%
+  max-width: 24%;
   }
 }
 
@@ -807,6 +831,7 @@ scrollbar-gutter:  stable;
   position: fixed;
   padding-left:20.8vw;
   height: 100%;
+
 }
 
 .graphisme .visual{
@@ -814,6 +839,9 @@ scrollbar-gutter:  stable;
   width:98%;
   height:100%;
   background:#000000;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .content .AV-IMG{
@@ -821,6 +849,9 @@ scrollbar-gutter:  stable;
   width:100%;
   height: auto;
   background:#000000;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 
@@ -835,12 +866,18 @@ scrollbar-gutter:  stable;
   line-height: 130%;
   top:5%;
   left:5%;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .content:hover .texte_travaux{
   opacity:1;
   touch-action: none;
   font-size:0.4vw;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .texte_travaux{
@@ -854,23 +891,32 @@ scrollbar-gutter:  stable;
   -moz-transition:color 1s ease-in-out;
   transition: color 1s ease-in-out;
   color:white;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .texte_travaux:hover{
 /*color: #130c4d;*/
-  color: #e73e01;
-  mix-blend-mode: normal;
+  color: #90EE90;
+  mix-blend-mode:  normal;
   position: absolute;
-  widht:70%;
+  width:70%;
   text-align: left;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .texte_travaux:hover #m2{
-  color: #e73e01;
+  color: #90EE90;
   mix-blend-mode: normal;
   position: absolute;
-  widht:80%;
+  width:80%;
   height: min-content;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .texte_travaux:hover #m1{
@@ -878,6 +924,9 @@ scrollbar-gutter:  stable;
   position: absolute;
   widht:80%;
   height: min-content;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 #m1{
@@ -897,13 +946,9 @@ scrollbar-gutter:  stable;
 .texte_travaux1{
   opacity:1;
   display:inline;
-  -webkit-transition:opacity 0.5s ease-in-out;
-  -moz-transition:opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  touch-action: none;
-  -webkit-transition:color 1s ease-in-out;
-  -moz-transition:color 1s ease-in-out;
-  transition: color 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
   color:black;
   white-space:line;
 }
@@ -925,9 +970,9 @@ scrollbar-gutter:  stable;
   max-width:50%;
   opacity:1;
   height:23vw;
-  -webkit-transition:height 1s ease-in-out;
-  -moz-transition:height 1s ease-in-out;
-  transition: height 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 
 .accueil:hover{
